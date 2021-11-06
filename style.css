@@ -209,7 +209,19 @@ nav ul li.offers:hover{
     padding: 0 25px;
   }
   
-  
+  #testimonials {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .testimonial-image {
+    width: 100%;
+  }
+  .carousel-item {
+    padding:0;
+    margin: 0;
+  }
 
 
   /* Features Products */
