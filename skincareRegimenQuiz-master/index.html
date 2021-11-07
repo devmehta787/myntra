@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./styles/assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./styles/assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./styles/assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./styles/assets/favicon_io/site.webmanifest">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <title>"Know Your Skin" Quiz</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="noScroll">
+
+  <header>
+    <div class="wrapper">
+      <h1>Build Your Own Skincare Regimen. Take the Quiz</h1>
+      <p>"No matter your personal pronoun, gender, or chosen identity, you deserve to live in your best skin!"</p>
+      <button id="toQuiz">
+        Click here to take the quiz!
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="quiz">
+      <form>
+        <!-- Question one - product -->
+        <div class="wrapper questionBlock qOne">
+          <img src="./styles/assets/questionImgs/product.jpg" alt="Skincare products hovering an individual">
+          <fieldset class="typeOfProduct">
+            <legend>What type of <span>product</span> are you looking for?</legend>
+
+            <div class="radio">
+              <input type="radio" name="product" id="cleanser" value="cleanser" checked>
+              <label for="cleanser">Face Cleanser</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="product" id="exfoliator" value="exfoliator">
+              <label for="exfoliator">Exfoliator/Scrubs</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="product" id="serum" value="serum">
+              <label for="serum">Face Serum</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="product" id="faceCream" value="faceCream">
+              <label for="faceCream">Facial Cream/ Moisturizer</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="product" id="sunscreen" value="sunscreen">
+              <label for="sunscreen">Sunscreen</label>
+            </div>
+          </fieldset>
+          <button class="nextQuestion">Next</button>
+        </div>
+        <!-- Question two - skin type-->
+        <div class="wrapper questionBlock">
+          <img src="./styles/assets/questionImgs/skinType.webp" alt="Different skin types shown">
+          <fieldset class="skinType">
+            <legend>What is your <span>skin type?</span>?</legend>
+
+            <div class="radio">
+              <input type="radio" name="type" id="oily" value="oily" checked>
+              <label for="oily">Oily</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="type" id="dry" value="dry">
+              <label for="dry">Dry</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="type" id="sensitive" value="sensitive">
+              <label for="sensitive">Sensitive</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="type" id="combination" value="combination">
+              <label for="combination">Combination</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="type" id="normal" value="normal">
+              <label for="normal">Normal</label>
+            </div>
+          </fieldset>
+          <button class="nextQuestion">Next</button>
+        </div>
+
+        <!-- Question three - budget -->
+        <div class="wrapper questionBlock">
+          <img src="./styles/assets/questionImgs/spend.webp" alt="An individual flashing dollar bills">
+          <fieldset class="budgetAmount">
+            <legend>How <span>much</span> are you willing to spend?</legend>
+
+            <div class="radio">
+              <input type="radio" name="price" id="cheap" value="$" checked>
+              <label for="cheap">$</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="price" id="lessExpensive" value="$$">
+              <label for="lessExpensive">$$</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="price" id="expensive" value="$$$">
+              <label for="expensive">$$$</label>
+            </div>
+          </fieldset>
+          <button class="nextQuestion">Next</button>
+        </div>
+        <!-- Question four - skin concern -->
+        <div class="wrapper questionBlock">
+          <img src="./styles/assets/questionImgs/skinConcern.png" alt="An individual drowning in skincare concern">
+          <fieldset class="skinGoal">
+            <legend>What is your current <span>skin concern</span>?</legend>
+
+            <div class="radio">
+              <input type="radio" name="goal" id="hydration" value="hydration" checked>
+              <label for="hydration">Hydration</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="goal" id="brightening" value="brightening">
+              <label for="brightening">Brightening</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="goal" id="acne" value="acne">
+              <label for="acne">Acne</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" name="goal" id="anti-aging" value="anti-aging">
+              <label for="anti-aging">Anti-Aging</label>
+            </div>
+          </fieldset>
+          <!-- Submit - get product -->
+          <button id="getSkincare" type="submit">Find the suitable product for my skin !</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="results">
+      <div class="wrapper">
+        <div class="skincareProduct" id="skincareProduct"></div>
+      </div>
+    </section>
+  </main>
+  <audio id="sparkleSound">
+    <source src="audio/Sparkle-sound-effect.mp3" type="audio/mp3">
+  </audio>
+  <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

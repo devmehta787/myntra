@@ -1,0 +1,730 @@
+@charset "UTF-8";
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background: #b695bd;
+  color: #0e0b0d;
+}
+
+.noScroll {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.noScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1, h2, .errorP {
+  font-family: "Elsie", cursive;
+}
+
+button,
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #c39fca, #a486aa);
+  -webkit-box-shadow: 20px 20px 60px #9b7fa1,  -20px -20px 60px #d1abd9;
+          box-shadow: 20px 20px 60px #9b7fa1,  -20px -20px 60px #d1abd9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover, button:focus,
+a:hover,
+a:focus {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #a486aa, #c39fca);
+  -webkit-box-shadow: 20px 20px 60px #9b7fa1,  -20px -20px 60px #d1abd9;
+          box-shadow: 20px 20px 60px #9b7fa1,  -20px -20px 60px #d1abd9;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  color: #0e0b0d;
+}
+
+.swal-modal {
+  background: #b695bd;
+}
+
+.swal-text {
+  letter-spacing: 3px;
+  line-height: 1.8;
+  text-align: center;
+  color: #0e0b0d;
+  text-shadow: 1px 1px 1px #f3ecf3;
+}
+
+.swal-content__input {
+  letter-spacing: 3px;
+  background: #f3ecf3;
+  text-shadow: 1px 1px 1px #b695bd;
+}
+
+header {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: clamp(4.5rem, 5vw, 7rem);
+  font-weight: 900;
+}
+
+header p {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 300;
+  font-style: italic;
+  margin: 5px 0 60px 0;
+}
+
+@-webkit-keyframes sparkling {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes sparkling {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+header button {
+  position: relative;
+}
+
+header button::before {
+  content: "✨";
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  text-shadow: 2px 2px 5px pink;
+  -webkit-animation: sparkling 0.8s linear infinite;
+  animation: sparkling 0.8s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+header button::after {
+  content: "✨";
+  position: absolute;
+  bottom: 5px;
+  right: -5px;
+  text-shadow: 2px 2px 5px pink;
+  -webkit-animation: sparkling 0.8s linear infinite;
+  animation: sparkling 0.8s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+header button:hover::before, header button:hover::after, header button:focus::before, header button:focus::after {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.quiz form .questionBlock {
+  display: none;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quiz form img {
+  height: 350px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.quiz form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  -webkit-box-shadow: 15px 15px #8657b152;
+          box-shadow: 15px 15px #8657b152;
+  border: 1px solid #f3ecf3;
+}
+
+.quiz form fieldset span {
+  border-bottom: 5px dotted #0e0b0d;
+}
+
+.quiz form fieldset legend {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 4px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quiz form fieldset .radio {
+  display: inline-block;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.quiz form fieldset .radio input[type='radio'] {
+  display: none;
+}
+
+.quiz form fieldset .radio label {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: 4px;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.quiz form fieldset .radio label:hover,
+.quiz form fieldset .radio label:focus {
+  color: #f3ecf3;
+  text-shadow: 2px 2px 3px #ecc3ff;
+}
+
+.quiz form fieldset .radio label:before {
+  content: " ";
+  position: relative;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid #4b2c78;
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.quiz form fieldset .radio label:before:hover,
+.quiz form fieldset .radio label:before:focus {
+  opacity: 0.7;
+}
+
+.quiz form fieldset .radio input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 4px;
+  content: " ";
+  background: #4b2c78;
+}
+
+.quiz form fieldset .radio label:after:hover, .quiz form fieldset .radio label:after:focus, .quiz form fieldset .radio label:after:active {
+  background: #7b5aad;
+}
+
+.quiz form fieldset .radio input[type=radio]:hover {
+  opacity: 0.7;
+}
+
+.quiz form fieldset .radio input[type=radio]:focus {
+  opacity: 0.7;
+}
+
+.quiz form .nextQuestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.results {
+  display: none;
+}
+
+.results h2 {
+  font-size: clamp(2.5rem, 3vw, 5rem);
+  font-weight: 400;
+  text-align: center;
+}
+
+.results .errorP {
+  font-size: clamp(2.5rem, 3vw, 4.5rem);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.productStyles {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
+.skincareProduct .redo {
+  margin-top: 50px;
+}
+
+.skincareProduct .skincareProductContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  -webkit-box-shadow: 15px 15px #8657b152;
+          box-shadow: 15px 15px #8657b152;
+  border: 1px solid #f3ecf3;
+  position: relative;
+}
+
+.skincareProduct .skincareProductContents::before {
+  content: '⭐';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: clamp(3rem, 3vw, 5rem);
+  text-shadow: 2px 2px 1px #49028a;
+}
+
+.skincareProduct .skincareProductContents::after {
+  content: '⭐';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: clamp(3rem, 3vw, 5rem);
+  text-shadow: 2px 2px 1px #49028a;
+}
+
+.skincareProduct .skincareProductContents .purchase {
+  text-decoration: none;
+  float: left;
+}
+
+.skincareProduct .skincareProductContents img {
+  width: auto;
+  height: 375px;
+  margin: 5px 0 20px 0;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 5px;
+          box-shadow: 5px 5px 5px;
+}
+
+@media (max-height: 850px) and (min-width: 800px) {
+  .quiz form img {
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-height: 850px) {
+  .questionBlock {
+    margin-bottom: 50px;
+  }
+  .quiz form img {
+    height: 200px;
+  }
+}
+
+@media (max-height: 667px) {
+  .results button {
+    margin-bottom: 10px;
+  }
+  .skincareProduct .skincareProductContents img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 440px) {
+  .skincareProduct .skincareProductContents img {
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .quiz .skincareForm img {
+    width: 75%;
+    height: 75%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .skincareProduct .skincareProductContents {
+    padding: 30px;
+  }
+}

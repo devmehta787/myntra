@@ -1,0 +1,84 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-size: 1.6rem;
+  font-family: $fontStackBody;
+  line-height: 1.5;
+  background: $main;
+  color: $primary-dark;
+}
+
+.noScroll {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.noScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1, h2, .errorP {
+  font-family: $fontStackHeading;
+}
+
+button,
+a {
+  font-family: $fontStackBody;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #c39fca, #a486aa);
+  box-shadow:  20px 20px 60px #9b7fa1, 
+             -20px -20px 60px #d1abd9;
+  transition: all 0.3s ease-in-out;       
+  
+  &:hover,
+  &:focus {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #a486aa, #c39fca);
+    box-shadow:  20px 20px 60px #9b7fa1, 
+             -20px -20px 60px #d1abd9;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  color: $primary-dark;
+}
+
+.swal-modal {
+  background: $main;
+}
+
+.swal-text {
+  letter-spacing: 3px;
+  line-height: 1.8;
+  text-align: center;
+  color: $primary-dark;
+  text-shadow: 1px 1px 1px $primary-light;
+}
+
+.swal-content__input {
+  letter-spacing: 3px;
+  background:$primary-light;
+  text-shadow: 1px 1px 1px $main;
+}

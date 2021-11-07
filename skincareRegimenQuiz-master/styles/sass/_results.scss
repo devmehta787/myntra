@@ -1,0 +1,65 @@
+.results {
+  display: none;
+
+  h2 {
+    font-size: clamp(2.5rem, 3vw, 5rem);
+    font-weight: $regular;
+    text-align: center;
+  }
+
+  .errorP {
+    font-size: clamp(2.5rem, 3vw, 4.5rem);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.productStyles {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+
+.skincareProduct {
+  .redo {
+    margin-top: 50px;
+  }
+  .skincareProductContents {
+    @include flex-center-column;
+    padding: 50px;
+    box-shadow: 15px 15px #8657b152;
+    border: 1px solid #f3ecf3;
+    position: relative;
+    &::before {
+      content: '⭐';
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: clamp(3rem, 3vw, 5rem);
+      text-shadow: 2px 2px 1px #49028a;
+    }
+    &::after {
+      content: '⭐';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: clamp(3rem, 3vw, 5rem);
+      text-shadow: 2px 2px 1px #49028a;
+    }
+    .purchase {
+      text-decoration: none;
+      float: left;
+    }
+
+    img {
+      width: auto;
+      height: 375px;
+      margin: 5px 0 20px 0;
+      border-radius: 50%;
+      box-shadow: 5px 5px 5px;
+    }
+  }
+}
+

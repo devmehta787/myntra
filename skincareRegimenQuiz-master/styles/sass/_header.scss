@@ -1,0 +1,75 @@
+header {
+  min-height: 100vh;
+  @include flex-center-column;
+  text-align: center;
+
+  h1 {
+    font-size: clamp(4.5rem, 5vw, 7rem);
+    font-weight: $black;  
+  }
+
+   p {
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: $light;
+      font-style: italic;
+      margin: 5px 0 60px 0;  
+    }
+
+  @-webkit-keyframes sparkling {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes sparkling {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+
+  button {
+    position: relative;
+    &::before {
+      content: "✨";
+      position: absolute;
+      top: 5px;
+      left: -5px;
+      text-shadow: 2px 2px 5px pink;
+      -webkit-animation: sparkling 0.8s linear infinite;
+      animation: sparkling 0.8s linear infinite;
+      animation-play-state: paused;      
+    }
+
+     &::after {
+      content: "✨";
+      position: absolute;
+      bottom: 5px;
+      right: -5px;
+      text-shadow: 2px 2px 5px pink;
+      -webkit-animation: sparkling 0.8s linear infinite;
+      animation: sparkling 0.8s linear infinite;
+      animation-play-state: paused;  
+    }
+    
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      animation-play-state: running;
+    }
+  }
+
+  
+}
