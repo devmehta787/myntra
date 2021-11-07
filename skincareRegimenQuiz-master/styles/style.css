@@ -8,6 +8,121 @@ html {
 body {
   margin: 0;
 }
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  top: 0;
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .3px;
+  background-color:#f5f5f6;
+}
+nav{
+  flex: 1;
+  text-align: left;
+}
+
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+  
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li.men:hover, .home:hover{
+  border-bottom: 4px solid #ee5f73;
+}
+nav ul li.women:hover{
+  border-bottom: 4px solid #fb56c1;
+}
+
+nav ul li.kids:hover{
+  border-bottom: 4px solid #ee5f73;
+  
+}
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 140px;
+}
+
+
+nav ul li.home:hover{
+  border-bottom: 4px solid #f2c210;
+}
+
+nav ul li.offers:hover{
+  border-bottom: 4px solid #0db7af;
+}
+
+.menu{
+  margin-right: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  
+}
+
+.menu li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.searchContainer {
+  display: inline-flex;
+  flex: 1 1 300px;
+  position: relative;
+ 
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 10%;
+  width: 40%;
+  background: #f5f5f6;
+  height: 30%;
+  
+}
+
+.searchIcon {
+  padding: 0.9rem;
+  color: #696e79;
+}
+
+
+.searchBox {
+  border: transparent;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  flex: 1;
+  width: 40%;
+  margin-left: 2%;
+  background: #f5f5f6;
+  height: 50%;
+}
+
+input[type=text]{
+  margin-left: 10%;
+  width: 40%;
+  height: 40px;
+  font-size: 14px;
+  padding: 10px;
+  color: #696e79;
+  border-radius: 0 4px 4px 0;
+  line-height: 24px;
+  background: #f5f5f6;
+}
+
+input[type=text]:focus{
+  background: #fff;
+  border: #fff;
+}
 
 article, aside, footer, header, nav, section {
   display: block;
@@ -298,7 +413,7 @@ body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
-  background: #b695bd;
+  background: #fff;
   color: #0e0b0d;
 }
 
@@ -330,10 +445,12 @@ a {
   letter-spacing: 5px;
   text-align: center;
   padding: 20px;
-  border-radius: 50px;
-  background: linear-gradient(145deg, #c39fca, #a486aa);
-  -webkit-box-shadow: 20px 20px 60px #9b7fa1,  -20px -20px 60px #d1abd9;
-          box-shadow: 20px 20px 60px #9b7fa1,  -20px -20px 60px #d1abd9;
+  border-radius: 35px;
+  background: linear-gradient(145deg, #f5f5f6, #8f8f8f);
+  -webkit-box-shadow: 20px 20px 60px #f5f5f6, 
+ -20px -20px 60px #f5f5f6;
+          box-shadow: 20px 20px 60px #8f8f8f, 
+ -20px -20px 60px #f5f5f6;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -341,10 +458,12 @@ a {
 button:hover, button:focus,
 a:hover,
 a:focus {
-  border-radius: 50px;
-  background: linear-gradient(145deg, #a486aa, #c39fca);
-  -webkit-box-shadow: 20px 20px 60px #9b7fa1,  -20px -20px 60px #d1abd9;
-          box-shadow: 20px 20px 60px #9b7fa1,  -20px -20px 60px #d1abd9;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #f5f5f6, #8f8f8f);
+  -webkit-box-shadow: 20px 20px 60px #f5f5f6, 
+ -20px -20px 60px #f5f5f6;
+          box-shadow: 20px 20px 60px #8f8f8f, 
+ -20px -20px 60px #f5f5f6;
 }
 
 button {
@@ -357,7 +476,7 @@ a {
 }
 
 .swal-modal {
-  background: #b695bd;
+  background: #f5f5f6;
 }
 
 .swal-text {
@@ -371,7 +490,7 @@ a {
 .swal-content__input {
   letter-spacing: 3px;
   background: #f3ecf3;
-  text-shadow: 1px 1px 1px #b695bd;
+  text-shadow: 1px 1px 1px #f5f5f6;
 }
 
 header {
@@ -536,8 +655,8 @@ header button:hover::before, header button:hover::after, header button:focus::be
 
 .quiz form fieldset .radio label:hover,
 .quiz form fieldset .radio label:focus {
-  color: #f3ecf3;
-  text-shadow: 2px 2px 3px #ecc3ff;
+  color: #f5f5f6;
+  text-shadow: 2px 2px 3px #434244;
 }
 
 .quiz form fieldset .radio label:before {
@@ -565,11 +684,11 @@ header button:hover::before, header button:hover::after, header button:focus::be
   position: absolute;
   left: 4px;
   content: " ";
-  background: #4b2c78;
+  background: #777679;
 }
 
 .quiz form fieldset .radio label:after:hover, .quiz form fieldset .radio label:after:focus, .quiz form fieldset .radio label:after:active {
-  background: #7b5aad;
+  background: #777679;
 }
 
 .quiz form fieldset .radio input[type=radio]:hover {
@@ -645,8 +764,8 @@ header button:hover::before, header button:hover::after, header button:focus::be
       -ms-flex-align: center;
           align-items: center;
   padding: 50px;
-  -webkit-box-shadow: 15px 15px #8657b152;
-          box-shadow: 15px 15px #8657b152;
+  -webkit-box-shadow: 15px 15px #f5f5f6;
+          box-shadow: 15px 15px #8f8f8f;
   border: 1px solid #f3ecf3;
   position: relative;
 }
@@ -657,7 +776,7 @@ header button:hover::before, header button:hover::after, header button:focus::be
   top: 0;
   left: 0;
   font-size: clamp(3rem, 3vw, 5rem);
-  text-shadow: 2px 2px 1px #49028a;
+  text-shadow: 2px 2px 1px #f5f5f6;
 }
 
 .skincareProduct .skincareProductContents::after {
@@ -666,7 +785,7 @@ header button:hover::before, header button:hover::after, header button:focus::be
   bottom: 0;
   right: 0;
   font-size: clamp(3rem, 3vw, 5rem);
-  text-shadow: 2px 2px 1px #49028a;
+  text-shadow: 2px 2px 1px #f5f5f6;
 }
 
 .skincareProduct .skincareProductContents .purchase {
