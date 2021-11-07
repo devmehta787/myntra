@@ -4,15 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Spin Wheel</title>
+  <link rel="stylesheet" href="style.css">
   <script src="lib/jquery.min.js"></script>
   <script src="src/jquery.spin-wheel.js"></script>
   <script src="src/jquery.spin-wheel-skins.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div id="spinwheel"></div>
   <button type="button" id="spin">Spin</button>
-  <script>
+  <script class="spinwheel">
     $(function () {
 
       SpinWheelSkins['myskin'] = $.extend({}, SpinWheelSkins.default);
